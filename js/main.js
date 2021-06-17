@@ -47,7 +47,60 @@ var contagem;
 for (let contagem = 0; contagem <= 5; contagem++) {
     alert(contagem);
     
-}; */
+}; 
 
 var data = new Date(); // mostra a data atual.
-alert(data.getDay());
+alert(data.getDay());// os .get...(), podem mostra mês adicionando mais 1 (data.get...()+1), como também pode mostrar minutos e outros.
+*/
+
+/* --AULA DE FUNÇÃO--
+
+function soma(n1, n2) {
+    return n1 + n2;
+}
+
+/*function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome);
+}
+var validar = 0;
+function validaIdade(idade){
+    if (idade >= 18) {
+        validar = true
+    }else{
+        validar = false
+    }
+    return validar;
+}
+
+var idade = prompt("Qual a sua idade");
+validaIdade(idade)
+console.log(validar);
+//alert(soma(5, 10));
+// alert(setReplace("vai Japão", "Japão", "Brasil"));*/
+
+function clicou() {
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
+     console.log(document.getElementById("agradecimento"));
+     //alert("Obrigado por clicar");
+}
+
+function redirecionar() {
+    window.open("https://www.instagram.com/");
+    window.location.href = "https://www.instagram.com/";
+}
+function trocar(elemeto) {
+    //document.getElementById("maousemove").innerHTML = "<b>Obrigado por passar o mause</b>";
+    elemeto.innerHTML = "<b>Obrigado por passar o mause</b>";
+    //balert("trcar texto")
+}
+function voltar(elemeto) {
+    //document.getElementById("mousemove").innerHTML = "<b>Passe o mause aqui</b>";
+ elemeto.innerHTML = "<b>Passe o mause aqui</b>";
+}
+function load() {
+    alert("pagina carregada");
+}
+
+function funcaoChange(elemento) {
+    console.log(elemento.value);
+} 
